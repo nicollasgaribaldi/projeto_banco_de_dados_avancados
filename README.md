@@ -106,5 +106,5 @@ Gera gráficos baseados nos dados do banco:
 
 ## Contribuição  
 Este projeto foi desenvolvido como requisito para a disciplina Banco de Dados 2.  
-
+Fonte do Dataset: https://www.kaggle.com/datasets/ujjwalwadhwa/cars24com-used-cars-dataset
 --- 

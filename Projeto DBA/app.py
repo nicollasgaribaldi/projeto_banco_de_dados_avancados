@@ -36,14 +36,6 @@ def manage_cars():
             conn.commit()
         return jsonify({"message": "Car added"}), 201
 
-@app.route('/report', methods=['GET'])
-def generate_report():
-    query = request.args.get('query')
-    df = pd.read_sql_query(query, conn)
-    file_path = "report.xlsx"
-    df.to_excel(file_path, index=False)
-    return send_file(file_path, as_attachment=True)
-
 @app.route("/insights")
 def insights():
     return render_template("insights.html", title="Insights")

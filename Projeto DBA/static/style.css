@@ -1,0 +1,182 @@
+/* Estilos globais */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Alinha itens verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+main.home-description {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+nav {
+    display: inline-block; /* Faz a barra de navegação ocupar apenas o espaço necessário */
+    background-color: #ebebeb; /* Cor de fundo para diferenciar */
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+    padding: 10px; /* Espaçamento interno */
+}
+
+nav a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #007bff; /* Cor do texto */
+    margin: 0 10px; /* Espaçamento entre os links */
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0056b3; /* Cor do texto ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Área principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ebebeb;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabelas */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #222222;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th, td {
+        text-align: right;
+        padding: 8px;
+    }
+
+    th::before, td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    tr {
+        margin-bottom: 10px;
+    }
+
+    th, td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+} 
+
+/* Estilos adicionais para a tabela na página de carros */
+.table-container table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Imagem (insights.html) */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

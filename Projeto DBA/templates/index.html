@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Banco de Dados Avançado</title>
+    <link rel="stylesheet" href="\static\style.css">
+</head>
+<body>
+    <header>
+        <h1>Projeto Final - Banco de Dados Avançado</h1>
+        <nav>
+            <a href="/">Home</a> | <a href="/cars">Cars</a> | <a href="/insights">Insights</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+            <!-- Bloco da página Home -->
+            {% block home_description %}
+            <div class="home-description">
+                <p>Projeto da Disciplina Banco de Dados Avançado do terceiro período do curso Sistemas para Internet no Uniesp Centro Universitário.</p>
+                <p>Realizado por Nícollas Garibaldi e Heleno Nogueira - (P3B Noite)</p>
+                <p>O banco de dados foi construído a partir de um conjunto de dados fornece informações pormenorizadas sobre automóveis usados, incluindo as suas especificações e detalhes de preços. O conjunto de dados é composto por cerca de 8015 linhas e 9 colunas, abrangendo vários tipos de automóveis usados, como sedans, SUVs, hatchbacks, SUVs de luxo e sedans de luxo.</p>
+            </div>
+            {% endblock %}
+        {% endblock %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="table-container">
+    <h1>Banco de Dados</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Distance</th>
+                <th>Owner</th>
+                <th>Fuel</th>
+                <th>Location</th>
+                <th>Drive</th>
+                <th>Type</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="car-table-body">
+            {% for car in cars %}
+            <tr>
+                <td>{{ car.car_name }}</td>
+                <td>{{ car.year }}</td>
+                <td>{{ car.distance }}</td>
+                <td>{{ car.owner }}</td>
+                <td>{{ car.fuel }}</td>
+                <td>{{ car.location }}</td>
+                <td>{{ car.drive }}</td>
+                <td>{{ car.type }}</td>
+                <td>{{ car.price }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <button id="load-more" onclick="loadMoreCars()">Exibir tudo</button>
+</div>
+{% endblock %}

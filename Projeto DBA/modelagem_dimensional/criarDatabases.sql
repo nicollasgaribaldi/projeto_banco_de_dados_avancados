@@ -1,0 +1,2 @@
+CREATE DATABASE producao;
+CREATE DATABASE homologacao;
